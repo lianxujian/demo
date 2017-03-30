@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>酒店列表</title>
+	<link rel="stylesheet" href="../font/iconfont.css">
+	<link rel="stylesheet" href="../../public/css/hotel.css">
+</head>
+<body>
+	<div class="container hotel-plugin plugin-active">
+		<div class="header">
+			<span class="hotel-back icon iconfont icon-fanhui"></span>
+			<h3>343间酒店</h3>
+		</div>
+		<div class="hotel-date">
+			<p>
+				<span>入住</span>
+				<span class="hotel-in">7月8日</span>
+			</p>
+			<p>
+				<span>离店</span>
+				<span class="hotel-out">7月8日</span>
+			</p>
+			<p class="recompose"><span>修改</span><i class="icon iconfont icon-gengduo"></i></p>
+		</div>
+		<div class="hotel-content">
+			正在加载中...
+		</div>
+		<div class="hotel-foot">
+			<p>排序<i class="icon iconfont icon-shangxiajiantou-copy"></i></p>
+			<p>价格<i class="icon iconfont icon-shangxiajiantou-copy"></i></p>
+			<p>区域<i class="icon iconfont icon-shangxiajiantou-copy"></i></p>
+			<p>星级<i class="icon iconfont icon-shangxiajiantou-copy"></i></p>
+		</div>
+		<div class="mask"></div>
+		<div class="filter-area">
+			<div class="filter-item arrange">
+				<p class="checkbox" arrange="down">价格由高到低排序<i class="icon iconfont icon-icon106"></i></p>
+				<p class="checkbox" arrange="up">价格由低到高排序<i class="icon iconfont icon-icon106"></i></p>
+			</div>
+			<div class="filter-item">
+				价格筛选区域
+			</div>
+			<div class="filter-item">
+				<p class="checkbox" region="海淀区">海淀区<i class="icon iconfont icon-icon106"></i></p>
+				<p class='checkbox' region="朝阳区">朝阳区<i class="icon iconfont icon-icon106"></i></p>
+				<p class="checkbox" region="大兴区">大兴区<i class="icon iconfont icon-icon106"></i></p>
+				<p class="checkbox" region="通州区">通州区<i class="icon iconfont icon-icon106"></i></p>
+				<p class="checkbox" region="东城区">东城区<i class="icon iconfont icon-icon106"></i></p>
+				<p class="checkbox" region="西城区">西城区<i class="icon iconfont icon-icon106"></i></p>
+			</div>
+			<div class="filter-item">
+				<p class="checkbox" stars="二星及以下 / 经济型">二星以下/经济型<i class="icon iconfont icon-icon106"></i></p>
+				<p class="checkbox" stars="三星">三星<i class="icon iconfont icon-icon106"></i></p>
+				<p class="checkbox" stars="四星">四星<i class="icon iconfont icon-icon106"></i></p>
+				<p class="checkbox" stars="五星">五星<i class="icon iconfont icon-icon106"></i></p>
+			</div>
+		</div>
+		<div class="plugin calendar-plugin">
+			<div class="header">
+				<span class="back icon iconfont icon-fanhui"></span>
+				<h3>343间酒店</h3>
+				<span class="done">完成</span>
+			</div>
+			<div class="live-in">选择入住时间</div>
+			<div class="year-month">
+				<i class="icon iconfont icon-fanhui prev"></i>
+				<p class="year-month-items">2014年7月</p>
+				<i class="icon iconfont icon-gengduo next"></i>
+			</div>
+			<div class="calendar-wrap">
+				<div class="calendar-week">
+					<span>周日</span>
+					<span>周一</span>
+					<span>周二</span>
+					<span>周三</span>
+					<span>周四</span>
+					<span>周五</span>
+					<span>周六</span>
+				</div>
+				<div class="calendar-months">
+					
+				</div>
+				<div class="live">
+					<p>入住日</p>
+					<p class="live-in-date"></p>
+				</div>
+				<div class="live live-nights">
+					<p>住几晚</p>
+					<p>
+						<span class="reduce">-</span>
+						<span class="count">1</span>
+						<span class="add">+</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<script src="../../public/js/hotel.js"></script>
+</body>
+</html>

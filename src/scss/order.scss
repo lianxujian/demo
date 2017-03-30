@@ -1,0 +1,154 @@
+@import 'reset';
+@import 'commen';
+@import 'slideSelector';
+
+.order{
+	.header{
+		border-bottom:1px solid $lineColor;
+		z-index:99;
+	}
+	.order-page{
+		overflow:scroll;
+		width:100%;
+		height:100%;
+		position:relative;
+		padding-top:45px;
+		dd{
+			span{
+				color:orange;
+				label{
+					background:orange;
+					color:#000;
+					margin-left:10px;
+					width:30px;
+					height:18px;
+					line-height:18px;
+					text-align:center;
+					color:#fff;
+					display:inline-block;
+				}
+			}
+		}
+		.time-order{
+			
+			display:-webkit-flex;
+			p{
+				flex:1;
+				height:20px;
+				margin-top:10px;
+				line-height:20px;
+				text-align:center;
+				display:-webkit-flex;
+				-webkit-justify-content:center;
+				&:first-child{
+					border-right:1px solid #ccc;
+					margin-left:-10px;
+				}
+				span{
+					margin-right:10px;
+				}
+			}
+		}
+		.order-list{
+			width:100%;
+			height:auto;
+			margin:0;
+			padding:0;
+			h3{
+				background:$backColor;
+				font-weight:normal;
+				padding-left:20px;
+			}
+			.order-box{
+				height:auto;
+			}
+			p{	
+				background:#fff;
+				height:45px;
+				border-bottom:1px solid $lineColor;
+				a{
+					display:inline-block;
+					width:78px;
+					color:#000;
+				}
+				b{
+					float:right;
+					margin-right:20px;
+					width:12px;
+					height:12px;
+					font-weight:normal;
+					border-radius:100%;
+					background:#999;
+					line-height:14px;
+					text-align:center;
+					color:#fff;
+					margin-top:15px;
+				}
+				input{
+					margin-left:20px;
+					width:70%;
+				}
+				label{
+					font-size:12px;
+					color:$baseColor;	
+					margin:0 15px;
+				}
+			}
+		}
+	    .order-footer{
+	    	background:$backColor;
+	    	width:100%;
+	    	height:auto;
+	    	margin:0;
+	    	padding:25px 15px;
+	    	line-height:20px;
+	    }
+	    .order-btn{
+	    	padding:0;
+	    	display:-webkit-flex;
+	    	width:100%;
+	    	a{
+	    		margin:0 !important;
+	    		padding:0;
+	    		line-height:40px;
+	    		color:#fff;
+	    		&.promise{
+	    			flex:6;
+	    			padding-left:20px;
+	    			background:#16498F;
+	    		}
+	    		&.buy-now{
+	    			flex:5;
+	    			text-align:center;
+	    			background:#24AEF2;
+	    		}
+	    	}
+	    }
+	}
+}
+.order-page{
+	div{
+		margin:0;
+	}
+}
+.guarantee{
+	.order-page{
+		.guarantee-footer{
+			padding-bottom:10px;
+		}
+	}
+	.order-list{
+		p{
+			margin-left:20px;
+			&:first-child{
+				background:$backColor;
+				margin:0;
+				padding-left:20px;
+			}
+			input{
+				margin-left:5px !important;
+				width:60% !important;
+			}
+		}
+	}
+}

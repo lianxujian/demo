@@ -1,0 +1,229 @@
+@import 'commen';
+.plugin{
+	overflow:auto;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:$whiteColor;
+	transform:translate3d(100%,0,0);
+	transition:transform 0.3s ease-in-out;
+	left:0;
+	top:0;
+	z-index:5;
+	.plugin-head{
+		height:45px;
+		line-height:45px;
+		background:#fff;
+		position:relative;
+		i{
+			color:$baseColor;
+			position:absolute;
+			left:15px;
+			z-index:1;
+		}
+		h3{
+			position:absolute;
+			left:0;
+			right:0;
+			text-align:center;
+			line-height:45px;
+		}
+	}
+	.plugin-item{
+		clear:both;
+		.item-top{
+			height:20px;
+			background:#ddd;
+			width:100%;
+			line-height:20px;
+			padding-left:15px;
+		}
+		.item-bottom{
+			p{
+				border-bottom:1px solid $backColor;
+				height:35px;
+				line-height:35px;
+				margin-left:15px;
+				&.active{
+					color:$baseColor;
+					i{
+						float:right;
+						margin-right:15px;
+					}
+				}
+			}
+		}
+		&:nth-child(3){
+			.item-bottom{
+				span{
+					float:left;
+					width:33.3%;
+					text-align:center;
+					line-height:35px;
+				}
+			}
+		}
+		&:nth-child(4){
+			.item-bottom{
+				span{
+					float:left;
+					width:11.1%;
+					text-align:center;
+					line-height:35px;
+				}
+			}
+		}
+	}
+	
+}
+.plugin-active{
+	transform:translate3d(0,0,0);	
+}
+.calendar-plugin{
+	width:100%;
+	height:100%;
+	&.plugin{
+		background:$backColor;
+	}
+	.header{
+		height: 45px;
+	    line-height: 45px;
+	    background: #fff;
+	    position: relative;
+	    .back{
+	    	position:absolute;
+	    	left:15px;
+	    	color:$baseColor;
+	    	z-index:10;
+	    }
+	    h3{
+	    	position:absolute;
+	    	left:0;
+	    	right:0;
+	    	text-align:center;
+	    	line-height:45px;
+	    }
+	    .done{
+	    	position:absolute;
+	    	right:15px;
+	    	color:$baseColor;
+	    }
+	}
+	.live-in{
+		height:40px;
+		line-height:40px;
+		padding-left:15px;
+		color:#555;
+		background:$backColor;
+		
+	}
+	.year-month{
+		height:45px;
+		border-top:1px solid $backColor;
+		border-bottom:1px solid $backColor;
+		line-height:45px;
+		position:relative;
+		.year-month-items{
+			position:absolute;
+			left:0;
+			right:0;
+			text-align:center;
+			font-size:14px;
+			line-height:45px;
+		}
+		.prev{
+			position:absolute;
+			left:15px;
+			z-index:10;
+			color:$baseColor;
+		}
+		.next{
+			position:absolute;
+			right:15px;
+			z-index:10;
+			color:$baseColor;
+		}
+		background:#fff;
+	}
+	.calendar-wrap{
+		.calendar-week{
+			background:#fff;
+			width:100%;
+			height:40px;
+			display:-webkit-flex;
+			color:#555;
+			border-bottom:2px solid $baseColor;
+		}
+		.calendar-months{
+			background:#fff;
+			width:100%;
+			span{
+				width:14.25%;
+				display:inline-block;
+				line-height:40px;
+				text-align:center;
+				border:1px solid $backColor;
+				&.prev-bg{
+					color:#ccc;
+				}
+				&.current-active{
+					background:$baseColor;
+					color:#fff;
+				}
+			}
+		}
+		span{
+			flex:auto;
+			display:inline-flex;
+			align-items:center;
+			justify-content:center;
+		}
+		
+	}
+	.live{
+		background:#fff;
+		height:55px;
+		margin-top:15px;
+		border-top:1px solid $lineColor;
+		border-bottom:1px solid $lineColor;
+		line-height:55px;
+		p{
+			&:first-child{
+				float:left;
+				margin-left:15px;
+			}
+			&:last-child{
+				float:right;
+				margin-right:15px;
+				color:$dimColor;
+			}
+		}
+	}
+	.live-nights{
+		background:#fff;
+		margin-top:0;
+		border-top:1px solid #fff;
+		p{
+			span{
+				display:inline-block;
+				width:30px;
+				height:30px;
+				text-align:center;
+				line-height:30px;
+				border:1px solid $baseColor;
+				&.reduce{
+					background:$baseColor;
+					color:#fff;
+				}
+				&:nth-child(2){
+					margin:0 -3px;
+					color:$baseColor;
+				}
+				&.add{
+					background:$baseColor;
+					color:#fff;
+				}
+			}
+		}
+	}
+}

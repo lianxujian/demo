@@ -1,0 +1,79 @@
+html {
+    font-family: "WEIRUANYAHEI", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-size: 62.5%;
+    line-height: 1.5;
+    color: #333333;
+    background-color: white;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+ul, ol {
+    list-style: none outside none;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #0088cc;
+}
+
+a:active, a:active {
+    outline: 0;
+    color: #006699;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 62.5%;
+}
+
+img, div, body, html, ul, li, a {
+    -webkit-touch-callout: none;
+}
+
+a:active, input {
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+
+
+
+
+
+
+
